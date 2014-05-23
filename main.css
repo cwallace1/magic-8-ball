@@ -148,3 +148,9 @@ h3 span {
     -webkit-transform-origin:50% 50%;
     -webkit-animation-timing-function: linear;
 }
+footer {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin: 50px auto;
+}
