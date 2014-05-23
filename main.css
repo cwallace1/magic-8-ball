@@ -23,7 +23,7 @@ h1 {
     line-height: 36px;
     font-size: 32px;
 }
-input {
+input, a {
     margin: 15px 0;
     line-height: 30px;
     font-size: 20px;
@@ -31,6 +31,15 @@ input {
     height: 30px;
     text-align: center;
     font-family: Monaco, monospace;
+}
+a {
+    width: 75px;
+    margin-left: 20px;
+    color: white;
+    background-color: gray;
+    border: solid 1px white;
+    border-radius: 3px;
+    padding: 5px 15px;
 }
 #container {
     position: relative;
