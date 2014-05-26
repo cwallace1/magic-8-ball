@@ -7,7 +7,7 @@
     font-family: Arial, san-serif;
 }
 body {
-    background-color: #89b;
+    background: #89b;
     width: 100%;
     position: absolute;
 }
@@ -23,7 +23,7 @@ h1 {
     line-height: 36px;
     font-size: 32px;
 }
-input, a {
+input, button {
     margin: 15px 0;
     line-height: 30px;
     font-size: 20px;
@@ -31,18 +31,17 @@ input, a {
     height: 30px;
     text-align: center;
 }
-a {
-    width: 75px;
+button {
+    width: 100px;
     margin-left: 20px;
     color: white;
-    background-color: gray;
+    background: gray;
     border: solid 1px white;
     border-radius: 3px;
-    padding: 5px 15px;
 }
 #container {
     position: relative;
-    background-color: black;
+    background: black;
     width: 760px;
     height: 760px;
     border: solid 1px #347;
@@ -70,14 +69,14 @@ h3 span {
     margin: auto;
     margin-top: 190px;
     border-radius: 100%;
-    background-color: #125;
+    background: #125;
 }
 #fate {
     width: 200px;
     height: 200px;
     border: solid 1px #000;
     border-radius: 5px;
-    background-color: #569;
+    background: #569;
     margin: auto;
     margin-top: 90px;
 }

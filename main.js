@@ -1,31 +1,21 @@
 //lets kick this all off!
 $(document).ready(function(){
-    watchIt();
     letterizeIt(null);
+    $("form").on("submit", function(e){
+        e.preventDefault();
+        watchIt();
+    });
 });
 
 //watch for those buttons!
 var watchIt = function() {
-        $(document).unbind("keypress");
-        $("a").unbind("mousedown");
-        $(document).on("keypress", function(e){
-            var inputz = $("#quest").val();
-            if (e.which === 13 && inputz === "") {
-                tryAgain();
-            }
-            else if (e.which === 13 && inputz !== "") {
-                doItAll(inputz);
-            }
-        });
-        $("a").on("mousedown", function() {
-            var inputz = $("#quest").val();
-            if (inputz === "") {
-                tryAgain();
-            }
-            else if (inputz !== "") {
-                doItAll(inputz);
-            }
-        });
+    var inputz = $("#quest").val();
+        if (inputz === "") {
+            tryAgain();
+        }
+        else if (inputz !== "") {
+            doItAll(inputz);
+        }
     },
 //this makes them try again if
 //nothing entered into field
@@ -118,7 +108,6 @@ var watchIt = function() {
         grabbingOn(chileConQueso);
         shakeThemUp();
         $("#fate").fadeIn(2000);
-        watchIt();
     },
 
 //this one creates a magic number
