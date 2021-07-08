@@ -110,10 +110,10 @@ var watchIt = function() {
         $("#splash").text(dataz);
         $("#splash").lettering();
         shakeThemUp();
+        goingOut();
         radialLetters();
         tempQuest = escapeRegExp(dataz);
         $("#quest").val("");
-        postIt();
     },
 
     //this toggles some shake magic!
@@ -148,7 +148,7 @@ var watchIt = function() {
             $("#fate").fadeIn(2000);
             $("#fateText").fadeIn(2000);
             $("#fateText").text(answer);
-        }, 2000)
+        }, 10)
         firebase.database().ref('answered/'+userId).set({
             answer: answer,
             question : tempQuest
