@@ -49,6 +49,9 @@ button {
     margin: auto;
     text-align: center;
 }
+h3 {
+    color:  transparent;
+}
 h3 span {
     color: white;
     font-family: Monaco, monospace;
