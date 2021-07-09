@@ -88,10 +88,12 @@ h3 span {
     background: #569;
     border-radius: 5px;
     border: solid 1px #000;
+    box-sizing:  border-box;
     display: flex;
     height: 60%;
     justify-content: space-around;
     margin: 20% auto 0;
+    padding:  10px;
     width: 60%;
 }
 #fate p {
