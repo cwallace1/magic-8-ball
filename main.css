@@ -90,6 +90,7 @@ h3 span {
     border: solid 1px #000;
     display: flex;
     height: 60%;
+    justify-content: space-around;
     margin: 20% auto 0;
     width: 60%;
 }
